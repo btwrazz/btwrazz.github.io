@@ -1,4 +1,9 @@
 {
-  "photos": [],
+  "photos": [
+    {
+      "file": "Snapchat-485456435.jpg",
+      "title": "My First Photo"
+    }
+  ],
   "videos": []
 }
