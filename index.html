@@ -1,48 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- GOOGLE SEO -->
-
 <title>Raaz Gupta | Official Website</title>
-
-<meta name="description" content="Welcome to the official website of Raaz Gupta. Discover Raaz Gupta, an aspiring E-Athlete, Gamer, Digital Creator and AI Skill Learner. Explore his introduction and social media profiles.">
-
+<meta name="description" content="Welcome to the official website of Raaz Gupta — E-Athlete, Gamer, Digital Creator and AI Skill Learner. Explore photos, videos, updates and social media.">
 <meta name="robots" content="index, follow">
-
 <meta name="author" content="Raaz Gupta">
-
 <meta name="theme-color" content="#0b1020">
-
 <link rel="canonical" href="https://btwrazz.github.io/">
-
 <meta name="google-site-verification" content="v7brk8PmIGErejAeXqEYA8lweF0iBJsko613-ic_OBg">
 
-<!-- OPEN GRAPH SEO -->
-
 <meta property="og:title" content="Raaz Gupta | Official Website">
-
-<meta property="og:description" content="Discover Raaz Gupta – Gamer, Creator, aspiring E-Athlete and AI Skill Learner.">
-
+<meta property="og:description" content="Gamer, Creator, aspiring E-Athlete and AI Skill Learner.">
 <meta property="og:type" content="website">
-
 <meta property="og:url" content="https://btwrazz.github.io/">
-
 <meta property="og:site_name" content="Raaz Gupta Official">
 
-<!-- TWITTER SEO -->
-
 <meta name="twitter:card" content="summary">
-
 <meta name="twitter:title" content="Raaz Gupta Official Website">
-
-<meta name="twitter:description" content="Official website of Raaz Gupta. Gamer, Creator and AI Skill Learner.">
-
-<!-- GOOGLE PERSON STRUCTURED DATA -->
+<meta name="twitter:description" content="Official website of Raaz Gupta.">
 
 <script type="application/ld+json">
 {
@@ -61,14 +39,9 @@
 }
 </script>
 
-<!-- GOOGLE FONTS -->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 
 <style>
 
@@ -87,10 +60,8 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
-
 header {
-    padding: 20px;
+    padding: 18px 12px;
     background: #151e35;
     position: sticky;
     top: 0;
@@ -102,46 +73,42 @@ header h2 {
     color: #55d6ff;
     font-size: 30px;
     letter-spacing: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
-
-/* NAVIGATION */
 
 nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 8px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 17px;
-    padding: 5px 12px;
-    transition: 0.3s;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: .3s;
 }
 
 nav a:hover {
     color: #55d6ff;
 }
 
-/* SECTIONS */
-
 section {
-    padding: 75px 20px;
-    scroll-margin-top: 120px;
+    padding: 70px 18px;
+    scroll-margin-top: 125px;
 }
 
 h1 {
     color: #55d6ff;
-    font-size: 48px;
-    margin-bottom: 15px;
+    font-size: 46px;
+    margin-bottom: 12px;
 }
 
 h2 {
     color: #55d6ff;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 p {
@@ -149,15 +116,12 @@ p {
     margin: 8px 0;
 }
 
-/* HOME */
-
 #home {
-    min-height: 420px;
+    min-height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background: linear-gradient(
         135deg,
         #0b1020,
@@ -166,41 +130,106 @@ p {
     );
 }
 
-#home h1 {
-    animation: fadeUp 1s ease;
+.hero-tag {
+    color: #c5d3e8;
 }
 
-/* CARDS */
+.hero-label {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 8px 18px;
+    border: 1px solid #55d6ff66;
+    border-radius: 30px;
+    color: #55d6ff;
+}
 
 .card {
     background: #19243c;
-    padding: 30px;
+    padding: 28px;
     margin: 20px auto;
-    max-width: 750px;
+    max-width: 800px;
     border-radius: 18px;
     border: 1px solid #55d6ff30;
     box-shadow: 0 8px 25px #00000030;
-    transition: 0.3s;
 }
 
-.card:hover {
+#about p {
+    margin: 14px 0;
+    font-size: 20px;
+}
+
+.section-intro {
+    color: #c5d3e8;
+    margin-bottom: 25px;
+}
+
+/* PHOTO AND VIDEO GALLERY */
+
+.gallery {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 18px;
+}
+
+.photo-card,
+.video-card {
+    background: #19243c;
+    border: 1px solid #55d6ff30;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: left;
+    transition: .3s;
+}
+
+.photo-card:hover,
+.video-card:hover {
     transform: translateY(-5px);
     border-color: #55d6ff;
 }
 
-/* ABOUT */
+.photo-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
 
-#about p {
-    margin: 15px 0;
-    font-size: 20px;
+.photo-caption,
+.video-caption {
+    padding: 13px 15px;
+    color: #dce8f5;
+    font-size: 17px;
+}
+
+.video-frame {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0;
+    display: block;
+    background: #080d19;
+}
+
+.empty-message {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 22px;
+    background: #19243c;
+    border: 1px dashed #55d6ff66;
+    border-radius: 14px;
+    color: #c5d3e8;
 }
 
 /* SOCIAL MEDIA */
 
 .social-container {
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -211,7 +240,7 @@ p {
     padding: 20px;
     border-radius: 14px;
     border: 1px solid #55d6ff30;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .social-card:hover {
@@ -250,7 +279,7 @@ p {
 .copy-btn {
     background: #55d6ff;
     color: #0b1020;
-    border: none;
+    border: 0;
     padding: 8px 16px;
     border-radius: 7px;
     margin-top: 10px;
@@ -260,8 +289,37 @@ p {
     cursor: pointer;
 }
 
-.copy-btn:hover {
-    background: white;
+/* UPCOMING UPDATES */
+
+.updates {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.update-card {
+    background: #19243c;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #55d6ff30;
+    text-align: left;
+}
+
+.update-card h3 {
+    color: #55d6ff;
+    font-size: 22px;
+}
+
+.update-status {
+    display: inline-block;
+    color: #0b1020;
+    background: #55d6ff;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
 /* FOOTER */
@@ -277,17 +335,45 @@ footer p {
     color: #aab8ce;
 }
 
-/* ANIMATIONS */
+/* IMAGE LIGHTBOX */
 
-.card,
-.social-card {
-    animation: fadeUp 0.8s ease;
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000e;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
+
+.lightbox img {
+    max-width: 95%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.lightbox button {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: #55d6ff;
+    border: 0;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ANIMATIONS */
 
 @keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(18px);
     }
 
     to {
@@ -296,12 +382,20 @@ footer p {
     }
 }
 
+.card,
+.photo-card,
+.video-card,
+.social-card,
+.update-card {
+    animation: fadeUp .7s ease;
+}
+
 /* MOBILE RESPONSIVENESS */
 
-@media (max-width: 600px) {
+@media(max-width:600px) {
 
     header {
-        padding: 15px 8px;
+        padding: 14px 6px;
     }
 
     header h2 {
@@ -309,12 +403,12 @@ footer p {
     }
 
     nav {
-        gap: 5px;
+        gap: 3px;
     }
 
     nav a {
-        font-size: 15px;
-        padding: 5px 8px;
+        font-size: 14px;
+        padding: 5px 7px;
     }
 
     h1 {
@@ -330,25 +424,25 @@ footer p {
     }
 
     section {
-        padding: 55px 15px;
+        padding: 55px 14px;
     }
 
     .card {
-        padding: 22px;
+        padding: 21px;
     }
 
     .social-container {
         grid-template-columns: 1fr;
     }
 
-    .social-card {
-        padding: 18px;
+    .photo-card img {
+        height: 220px;
     }
 }
 
 /* ACCESSIBILITY */
 
-@media (prefers-reduced-motion: reduce) {
+@media(prefers-reduced-motion:reduce) {
 
     *,
     *::before,
@@ -361,9 +455,7 @@ footer p {
 }
 
 </style>
-
 </head>
-
 
 <body>
 
@@ -374,17 +466,15 @@ footer p {
 <h2>RAAZ</h2>
 
 <nav>
-
 <a href="#home">Home</a>
-
-<a href="#about">About Me</a>
-
-<a href="#socials">Social Media</a>
-
+<a href="#about">About</a>
+<a href="#photos">Photos</a>
+<a href="#videos">Videos</a>
+<a href="#socials">Socials</a>
+<a href="#updates">Updates</a>
 </nav>
 
 </header>
-
 
 <!-- HOME -->
 
@@ -394,12 +484,17 @@ footer p {
 
 <p>Welcome to my official website!</p>
 
-<p>E-Athlete | Gamer | Creator | AI Skill Learner</p>
+<p class="hero-tag">
+E-Athlete | Gamer | Creator | AI Skill Learner
+</p>
+
+<span class="hero-label">
+GAME. CREATE. CONNECT.
+</span>
 
 </section>
 
-
-<!-- ABOUT ME -->
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -407,17 +502,14 @@ footer p {
 
 <h2>About Me</h2>
 
+<p>Hi! I'm Raaz Gupta.</p>
+
 <p>
-Hi! I'm Raaz Gupta.
+Welcome to my personal corner of the internet.
 </p>
 
 <p>
-Welcome to the official website of Raaz Gupta.
-This is my personal corner of the internet.
-</p>
-
-<p>
-Here you can discover my interests, gaming journey,
+Here you can explore my photos, videos, gaming journey,
 digital creativity and social media profiles.
 </p>
 
@@ -432,6 +524,41 @@ learning AI skills and connecting with people.
 
 </section>
 
+<!-- PHOTOS -->
+
+<section id="photos">
+
+<h1>My Photos</h1>
+
+<p class="section-intro">
+A collection of my favourite moments and pictures.
+</p>
+
+<div id="photo-gallery" class="gallery"></div>
+
+<div id="photo-empty" class="empty-message">
+No photos added yet. Check back soon!
+</div>
+
+</section>
+
+<!-- VIDEOS -->
+
+<section id="videos">
+
+<h1>My Videos</h1>
+
+<p class="section-intro">
+Watch my gaming videos, edits and other content.
+</p>
+
+<div id="video-gallery" class="gallery"></div>
+
+<div id="video-empty" class="empty-message">
+No videos added yet. Check back soon!
+</div>
+
+</section>
 
 <!-- SOCIAL MEDIA -->
 
@@ -439,192 +566,283 @@ learning AI skills and connecting with people.
 
 <h1>Connect With Me</h1>
 
-<p>Find me on my social media platforms.</p>
+<p class="section-intro">
+Find me on my social media platforms.
+</p>
 
 <div class="social-container">
 
-
-<!-- INSTAGRAM -->
-
 <div class="social-card">
-
 <h3>Instagram</h3>
-
 <p>@willpalyzz_</p>
-
 <a href="https://www.instagram.com/willpalyzz_/"
 target="_blank" rel="noopener noreferrer">
-
 Visit Profile →
-
 </a>
-
 </div>
 
-
-<!-- DISCORD -->
-
 <div class="social-card">
-
 <h3>Discord</h3>
-
 <p>w1llplayzz_</p>
-
 <button class="copy-btn"
-onclick="copyText('w1llplayzz_', this)">
-
+onclick="copyText('w1llplayzz_',this)">
 Copy ID
-
 </button>
-
 </div>
 
-
-<!-- ROBLOX -->
-
 <div class="social-card">
-
 <h3>Roblox</h3>
-
 <p>w1llPlaYzzZZ</p>
-
 <a href="https://www.roblox.com/search/users?keyword=w1llPlaYzzZZ"
 target="_blank" rel="noopener noreferrer">
-
 Find Profile →
-
 </a>
-
 </div>
 
-
-<!-- KICK -->
-
 <div class="social-card">
-
 <h3>Kick</h3>
-
 <p>P4ND4AAA</p>
-
 <a href="https://kick.com/P4ND4AAA"
 target="_blank" rel="noopener noreferrer">
-
 Visit Channel →
-
 </a>
-
 </div>
 
-
-<!-- SPOTIFY -->
-
 <div class="social-card">
-
 <h3>Spotify</h3>
-
 <p>W1llPlaYzzZZ</p>
-
 <a href="https://open.spotify.com/search/W1llPlaYzzZZ"
 target="_blank" rel="noopener noreferrer">
-
 Find Profile →
-
 </a>
-
 </div>
 
-
-<!-- X -->
-
 <div class="social-card">
-
 <h3>X (Twitter)</h3>
-
 <p>@Btwraaz_</p>
-
 <a href="https://x.com/Btwraaz_"
 target="_blank" rel="noopener noreferrer">
-
 Visit Profile →
-
 </a>
-
 </div>
 
-
-<!-- THREADS -->
-
 <div class="social-card">
-
 <h3>Threads</h3>
-
 <p>@willplayzz_</p>
-
 <a href="https://www.threads.net/@willplayzz_"
 target="_blank" rel="noopener noreferrer">
-
 Visit Profile →
-
 </a>
-
 </div>
 
-
-<!-- SNAPCHAT -->
-
 <div class="social-card">
-
 <h3>Snapchat</h3>
-
 <p>@btwrazz_18</p>
-
 <a href="https://www.snapchat.com/add/btwrazz_18"
 target="_blank" rel="noopener noreferrer">
-
 Add Me →
-
 </a>
-
 </div>
-
-
-<!-- TELEGRAM -->
 
 <div class="social-card">
-
 <h3>Telegram</h3>
-
 <p>@Btwrazz_</p>
-
 <a href="https://t.me/Btwrazz_"
 target="_blank" rel="noopener noreferrer">
-
-Message Me →
-
+Visit Profile →
 </a>
-
 </div>
-
 
 </div>
 
 </section>
 
+<!-- UPCOMING UPDATES -->
+
+<section id="updates">
+
+<h1>Upcoming Updates</h1>
+
+<p class="section-intro">
+Things I'm planning to add to this website.
+</p>
+
+<div class="updates">
+
+<div class="update-card">
+<span class="update-status">COMING SOON</span>
+<h3>More Photos</h3>
+<p>New pictures and special moments will be added to my gallery.</p>
+</div>
+
+<div class="update-card">
+<span class="update-status">COMING SOON</span>
+<h3>Gaming Videos</h3>
+<p>Gameplay, highlights and creative video edits.</p>
+</div>
+
+<div class="update-card">
+<span class="update-status">PLANNED</span>
+<h3>More Website Features</h3>
+<p>More updates and improvements are on the way.</p>
+</div>
+
+</div>
+
+</section>
 
 <!-- FOOTER -->
 
 <footer>
 
 <p>© 2026 Raaz Gupta. All Rights Reserved.</p>
-
 <p>GAME. CREATE. CONNECT.</p>
 
 </footer>
 
+<!-- IMAGE LIGHTBOX -->
 
-<!-- COPY FUNCTION -->
+<div class="lightbox" id="lightbox"
+onclick="closeLightbox()">
+
+<button aria-label="Close image"
+onclick="closeLightbox()">×</button>
+
+<img id="lightbox-image"
+src=""
+alt="Expanded gallery photo">
+
+</div>
+
+<!-- JAVASCRIPT -->
 
 <script>
+
+async function loadMedia() {
+
+    const photoGallery =
+        document.getElementById('photo-gallery');
+
+    const videoGallery =
+        document.getElementById('video-gallery');
+
+    const photoEmpty =
+        document.getElementById('photo-empty');
+
+    const videoEmpty =
+        document.getElementById('video-empty');
+
+    try {
+
+        const response = await fetch('./media.json');
+
+        if (!response.ok) {
+            throw new Error('Could not load media.json');
+        }
+
+        const media = await response.json();
+
+        (media.photos || []).forEach(photo => {
+
+            const card = document.createElement('div');
+
+            card.className = 'photo-card';
+
+            const img = document.createElement('img');
+
+            img.src = './photos/' +
+                encodeURIComponent(photo.file);
+
+            img.alt = photo.title || 'Raaz Gupta photo';
+
+            img.loading = 'lazy';
+
+            img.onclick = () => openLightbox(img.src);
+
+            img.onerror = () => card.remove();
+
+            const caption = document.createElement('div');
+
+            caption.className = 'photo-caption';
+
+            caption.textContent = photo.title || 'Photo';
+
+            card.append(img, caption);
+
+            photoGallery.appendChild(card);
+
+        });
+
+        (media.videos || []).forEach(video => {
+
+            const card = document.createElement('div');
+
+            card.className = 'video-card';
+
+            const frame = document.createElement('iframe');
+
+            frame.className = 'video-frame';
+
+            frame.src =
+                'https://www.youtube-nocookie.com/embed/' +
+                encodeURIComponent(video.id);
+
+            frame.title = video.title || 'Raaz Gupta video';
+
+            frame.loading = 'lazy';
+
+            frame.allow =
+                'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+
+            frame.allowFullscreen = true;
+
+            const caption = document.createElement('div');
+
+            caption.className = 'video-caption';
+
+            caption.textContent = video.title || 'Video';
+
+            card.append(frame, caption);
+
+            videoGallery.appendChild(card);
+
+        });
+
+        photoEmpty.style.display =
+            (media.photos || []).length ? 'none' : 'block';
+
+        videoEmpty.style.display =
+            (media.videos || []).length ? 'none' : 'block';
+
+    }
+
+    catch(error) {
+
+        photoEmpty.textContent =
+            'Gallery is getting ready. Please check again later.';
+
+        videoEmpty.textContent =
+            'Video gallery is getting ready. Please check again later.';
+
+        console.error(error);
+
+    }
+
+}
+
+function openLightbox(src) {
+
+    document.getElementById('lightbox-image').src = src;
+
+    document.getElementById('lightbox').style.display = 'flex';
+
+}
+
+function closeLightbox() {
+
+    document.getElementById('lightbox').style.display = 'none';
+
+}
 
 function copyText(text, button) {
 
@@ -632,13 +850,13 @@ function copyText(text, button) {
 
     .then(() => {
 
-        const originalText = button.innerText;
+        const original = button.innerText;
 
-        button.innerText = "Copied!";
+        button.innerText = 'Copied!';
 
         setTimeout(() => {
 
-            button.innerText = originalText;
+            button.innerText = original;
 
         }, 1500);
 
@@ -646,14 +864,15 @@ function copyText(text, button) {
 
     .catch(() => {
 
-        button.innerText = "Copy unavailable";
+        button.innerText = 'Copy unavailable';
 
     });
 
 }
 
+loadMedia();
+
 </script>
 
 </body>
-
 </html>
