@@ -1,66 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="v7brk8PmIGErejAeXqEYA8lweF0iBJsko613-ic_OBg" />
+
 <title>Raaz Gupta | E-Athlete & AI Skill Learner</title>
 
 <meta name="description" content="Welcome to the official website of Raaz Gupta, an aspiring E-Athlete and AI Skill Learner passionate about esports, gaming and artificial intelligence.">
 
+<meta name="google-site-verification" content="v7brk8PmIGErejAeXqEYA8lweF0iBJsko613-ic_OBg">
+
+<meta name="theme-color" content="#0b1020">
+
+<meta property="og:title" content="Raaz Gupta | Official Website">
+<meta property="og:description" content="Creator | Learner | Future Developer">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
-* {}
-  body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b1020;
-  color: white;
-  text-align: center;
+/* GLOBAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* HEADER */
 
 header {
-  padding: 25px;
-  background: #151e35;
-font-family: 'Rajdhani', sans-serif;}
+    padding: 20px;
+    background: #151e35;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #55d6ff33;
+}
+
+header h2 {
+    color: #55d6ff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 12px;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    color: #55d6ff;
+}
+
+/* SECTIONS */
 
 section {
-  padding: 55px 20px;
+    padding: 75px 20px;
+    scroll-margin-top: 120px;
 }
 
+/* HEADINGS */
+
 h1 {
-  color: #55d6ff;
-  font-size: 38px;
+    color: #55d6ff;
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
 h2 {
-  color: #55d6ff;
+    color: #55d6ff;
+    margin-bottom: 15px;
 }
 
-.card 
-  background: #19243c;
-  padding: 25px;
-  margin: 20px auto;
-  max-width: 600px;
-  border-radius: 15px;
+p {
+    font-size: 19px;
+    margin: 8px 0;
 }
 
-footer
-  padding: 25px;
-  background: #151e35;
+/* HOME */
+
+#home {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #0b1020,
+        #151e35,
+        #102b42
+    );
 }
+
+/* CARDS */
+
+.card {
+    background: #19243c;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 650px;
+    border-radius: 18px;
+    border: 1px solid #55d6ff30;
+    box-shadow: 0 8px 25px #00000030;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #55d6ff;
+}
+
+/* LINKS */
+
+a {
+    color: #55d6ff;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    background: #151e35;
+    border-top: 1px solid #55d6ff33;
+}
+
+footer p {
+    font-size: 15px;
+    color: #aab8ce;
+}
+
+/* ANIMATIONS */
+
+#home h1 {
+    animation: fadeUp 1s ease;
+}
+
+.card {
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 8px;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 55px 15px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
+
 <h2>RAAZ</h2>
 
 <nav>
@@ -68,67 +258,123 @@ footer
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
+
 </header>
 
-section id="home">
+
+<!-- HOME -->
+
+<section id="home">
+
 <h1>Hey, I'm Raaz!</h1>
+
 <p>Welcome to my personal website.</p>
+
 <p>Creator | Learner | Future Developer</p>
+
 </section>
+
+
+<!-- ABOUT -->
 
 <section id="about">
-<div class="card">
-<h2>About Me</h2>
-<p>Hi! <p>
-Hey! I'm Raaz Gupta — an aspiring E-Athlete
-and AI Skill Learner.
 
+<div class="card">
+
+<h2>About Me</h2>
+
+<p>Hi! I'm Raaz Gupta — an aspiring E-Athlete and AI Skill Learner.</p>
+
+<p>
 I'm passionate about competitive gaming,
 esports, Artificial Intelligence and technology.
+</p>
 
+<p>
 I love improving my gaming skills, exploring AI
 and learning new things every day.
+</p>
 
+<p>
 My journey is about learning, improving,
 competing and turning my dreams into reality.
+</p>
 
-GAME. LEARN. EVOLVE.
-</p></p>
+<h2>GAME. LEARN. EVOLVE.</h2>
+
 </div>
+
 </section>
 
+
+<!-- SKILLS -->
+
 <section id="skills">
+
 <div class="card">
+
 <h2>My Skills & Interests</h2>
+
 <p>Artificial Intelligence</p>
 <p>Web Development</p>
 <p>Programming</p>
 <p>Creative Projects</p>
+
 </div>
+
 </section>
+
+
+<!-- PROJECTS -->
 
 <section id="projects">
+
 <div class="card">
+
 <h2>My Projects</h2>
+
 <p>SkillMeet - An educational learning platform.</p>
+
 <p>Tara Honda - A bike showroom website.</p>
+
 </div>
+
 </section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
+
 <div class="card">
+
 <h2>Connect With Me</h2>
-<p><a href="https://www.instagram.com/willplayzz_/"
+
+<p>
+<a href="https://www.instagram.com/willplayzz_/"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer">
+
 📸 Follow me on Instagram
-</a></p>
+
+</a>
+</p>
+
 </div>
+
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
+
 <p>© 2026 Raaz. All Rights Reserved.</p>
+
+<p>GAME. LEARN. EVOLVE.</p>
+
 </footer>
 
 </body>
